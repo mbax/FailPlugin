@@ -1,0 +1,16 @@
+name: FailPlugin
+main: org.kitteh.fail.FailPlugin
+description: ${project.description}
+author: mbaxter
+url: http://kitteh.org
+version: '${project.version}'
+commands:
+  fail:
+    usage: /fail
+    description: Fail miserably on PEX
+    permission: fail.ure
+    permission-message: Permission fail.ure not granted
+permissions:
+  fail.ure:
+    description: Access to /fail
+    default: false
